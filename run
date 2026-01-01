@@ -1,0 +1,24 @@
+set -e
+
+# ==========================================
+# ONE-SHOT PUSH + MERGE (MAIN)
+# ==========================================
+
+# Ensure correct branch
+git checkout main
+
+# Pull latest (safe rebase)
+git pull --rebase origin main || true
+
+# Stage only tracked + intended files
+git status
+
+# Commit any remaining staged changes (if any)
+git commit -m "Finalize BuzzWorld E2E polish and automation" || echo "No pending commits"
+
+# Push and ensure upstream
+git push --set-upstream origin main
+
+# ==========================================
+# END ONE-SHOT
+# ==========================================
