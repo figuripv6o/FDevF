@@ -1,2 +1,1 @@
-# FDevF
-🐝 BUZZANATOR FDF ONE SHOT DEPLOYMENT BUNDLE
+Finalize BuzzWorld ANTITELEMETRY README (FDF Certified™, defensive transparency)
