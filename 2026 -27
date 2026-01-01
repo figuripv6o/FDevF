@@ -1,0 +1,46 @@
+set -e
+
+# ==========================================
+# BUZZWORLD / FDevF — CLEAN ONE-SHOT FINISH
+# Polish only. No automation changes.
+# ==========================================
+
+# --- README (PROJECT FACE) ---
+cat > README.md <<'EOF'
+# BuzzWorld Daily Intel
+
+Automated daily intelligence reports generated from **public sources only**, powered by **GitHub Actions**.
+
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+![Automation](https://img.shields.io/badge/automation-GitHub%20Actions-blue)
+![Schedule](https://img.shields.io/badge/schedule-daily%2006%3A00%20UTC-orange)
+
+---
+
+## What This Is
+
+A lightweight, transparent automation that:
+
+- Runs daily at **06:00 UTC**
+- Pulls selected public documentation
+- Generates a report
+- Commits changes automatically
+- Preserves a full audit trail via Git history
+
+No credentials.  
+No private data.  
+No hidden behavior.
+
+---
+
+## How It Works
+
+1. GitHub Actions runs on a daily cron
+2. Public documentation is fetched
+3. A report is written to `reports/daily.md`
+4. Changes are committed by a bot identity
+5. History remains fully inspectable
+
+---
+
+## Repository Layout
